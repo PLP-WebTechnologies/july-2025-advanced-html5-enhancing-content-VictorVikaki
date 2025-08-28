@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhanced HTML5 page with lists, tables, media, and forms">
+    <title>Enhanced HTML5 Page</title>
+</head>
+<body>
+    <header>
+    <h1>Enhanced HTML5 Page</h1>
+    <nav aria-label="Main Navigation">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section>
+        <h2>EPL Teams</h2>
+        <p>The big six teams include:</p>
+        <ul>
+            <li>Chelsea</li>
+            <li>Arsenal</li>
+            <li>Manchester City</li>
+            <li>Manchester United</li>
+            <li>Tottenham Hotspur</li>
+            <li>Liverpool</li>
+        </ul>
+        </section>
+
+        <section>
+            <h2>Table</h2>
+            <p>This table compares title wins for each team:</p>
+                <table border="1">
+                    <thead>
+                    <tr>
+                        <th>Team</th>
+                        <th>Titles</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Chelsea</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Manchester City</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Manchester United</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Arsenal</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Tottenham Hotspur</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Liverpool</td>
+                        <td>20</td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Media</h2>
+
+            <figure>
+                <img src="chelsea-logo.png" alt="Chelsea FC logo">
+            </figure>
+
+            <figure>
+            <video controls>
+                <source src="highlights.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </figure>
+
+            <figure>
+            <audio controls>
+                <source src="crowd-cheer.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+            <p>Please fill out this form to get in touch:</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required minlength="2">
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                <br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </fieldset>
+
+                <fieldset>
+                <legend>Preferences</legend>
+
+                <label for="team">Favorite EPL Team:</label>
+                <select id="team" name="team" required>
+                    <option value="">--Select a Team--</option>
+                    <option value="chelsea">Chelsea</option>
+                    <option value="arsenal">Arsenal</option>
+                    <option value="man-city">Manchester City</option>
+                    <option value="man-united">Manchester United</option>
+                    <option value="tottenham">Tottenham Hotspur</option>
+                    <option value="liverpool">Liverpool</option>
+                </select>
+                <br><br>
+
+                <label>Subscribe to Newsletter:</label>
+                <input type="radio" id="yes" name="subscribe" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="subscribe" value="no">
+                <label for="no">No</label>
+                </fieldset>
+
+                <fieldset>
+                <legend>Message</legend>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="40" placeholder="Type here..." required minlength="10"></textarea>
+                </fieldset>
+
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            </section>
+
+    </main>
+
+    <footer>
+    <p>&copy; 2025 </p>
+    </footer>
+</body>
+</html>
